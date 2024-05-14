@@ -1,0 +1,107 @@
+@import "header.css";
+@import "main.scss";
+@import "section.scss";
+@import "footer.scss";
+@import "../utilidades/mixin";
+
+
+header {
+    background-color: #19010156;
+    text-align: center;
+    font-size: larger;
+    padding: 5%;
+    .banner {
+      display: flex;
+      width: 100%;
+      height: auto;
+    }
+    nav {
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+  
+        li {
+          a {
+            color: aliceblue;
+            font-family: Arial;
+            font-size: large;
+          }
+        }
+      }
+    }
+  }
+   .img {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 2px;
+  } 
+  main {
+    margin: 10px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    .textos {
+      text-align: center;
+      max-width: 100%;
+      h1 {
+        color: rgb(13, 13, 14);
+        font-size: 4vw;
+      }
+    }
+  }
+  section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 5px;
+    padding: 30px;
+    background-color: #B1A9A9;
+    div img {
+      width: 100%;
+    }
+    &.contacto {
+      background-color: #1b191a;
+      text-align: center;
+      padding: 20px;
+      border: 1px solid black;
+    }
+    div h3 {
+      font-family: Georgia;
+      font-size: 3vw;
+      margin: 20px 0;
+    }
+  } 
+  .volver {
+    background-color: #333;
+    padding: 10px;
+  } 
+  footer {
+    background-color: #19010156;
+    text-align: center;
+    padding: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    header {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        li {
+          margin: 10px 0;
+        }
+      }
+    }
+    section {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    main .textos h1 {
+      font-size: 6vw;
+    }
+    section div h3 {
+      font-size: 5vw;
+    }
+  }

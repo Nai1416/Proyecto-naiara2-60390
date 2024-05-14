@@ -1,0 +1,28 @@
+
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 5px;
+    padding: 30px;
+    background-color:$color-section;
+    div img {
+      width: 100%;
+    }
+    &.contacto {
+      text-align: center;
+      padding: 20px;
+      border: 1px solid black;
+    }
+    div h3 {
+      font-family: Georgia;
+      font-size: 3vw;
+      margin: 20px 0;
+    }
+  } 
+  .volver {
+    background-color:$color-volver;
+    padding: 10px;
+  } 

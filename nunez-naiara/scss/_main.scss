@@ -1,0 +1,17 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+main {
+    margin: 10px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    .textos {
+      text-align: center;
+      max-width: 100%;
+      h1 {
+        color: $color-main;
+        font-size: 4vw;
+      }
+    }
+  }
